@@ -16,6 +16,11 @@
   border: 1px solid #fff;
 }
 
+.gtg-container__width-td {
+  height: 20px;
+  background-color: #fff;
+}
+
 .gtg-container tbody td:first-child {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
