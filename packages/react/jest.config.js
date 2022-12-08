@@ -1,7 +1,12 @@
 module.exports = {
   roots: ["<rootDir>/src"],
   clearMocks: true,
-  collectCoverageFrom: ["<rootDir>/src/**/*.{ts,tsx}", "!**/*.d.ts"],
+  collectCoverageFrom: [
+    "<rootDir>/src/**/*.{ts,tsx}",
+    "!**/*.d.ts",
+    "!**/types.ts",
+    "!<rootDir>/src/**/index.ts",
+  ],
   coverageDirectory: "coverage",
   coverageProvider: "v8",
   testEnvironment: "jsdom",
